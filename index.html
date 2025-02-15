@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quantum Computing</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -18,28 +20,31 @@
                     <li class="nav-item"><a class="nav-link" href="#intro">Introduction</a></li>
                     <li class="nav-item"><a class="nav-link" href="#how-it-works">How It Works</a></li>
                     <li class="nav-item"><a class="nav-link" href="#applications">Applications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#future">Future</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="bg-primary text-white text-center py-5">
+    <header class="bg-primary text-white text-center py-5" data-aos="fade-down">
         <h1>Understanding Quantum Computing</h1>
         <p>The Future of Computation</p>
     </header>
 
     <div class="container mt-5">
-        <section id="intro" class="mb-5">
+        <section id="intro" class="mb-5" data-aos="fade-right">
             <h2>Introduction</h2>
             <p>Quantum computing is a type of computing that takes advantage of the quantum states of subatomic particles to store information. Unlike classical computers, which use bits, quantum computers use quantum bits or qubits.</p>
+            <img src="image2.png" class="img-fluid" alt="Quantum Computer">
         </section>
 
-        <section id="how-it-works" class="mb-5">
+        <section id="how-it-works" class="mb-5" data-aos="fade-left">
             <h2>How Quantum Computing Works</h2>
             <p>Quantum computers use superposition and entanglement to perform calculations exponentially faster than classical computers. A qubit can exist in multiple states at once, allowing complex problem-solving at unprecedented speeds.</p>
+            <img src="image.png" class="img-fluid" alt="Qubit Representation">
         </section>
 
-        <section id="applications" class="mb-5">
+        <section id="applications" class="mb-5" data-aos="fade-up">
             <h2>Applications of Quantum Computing</h2>
             <ul>
                 <li>Cryptography and Cybersecurity</li>
@@ -48,6 +53,12 @@
                 <li>Artificial Intelligence and Machine Learning</li>
             </ul>
         </section>
+
+        <section id="future" class="mb-5" data-aos="zoom-in">
+            <h2>Future of Quantum Computing</h2>
+            <p>The future of quantum computing is promising, with advancements in quantum algorithms and hardware expected to revolutionize industries such as finance, healthcare, and artificial intelligence.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/IBM_Q_system.jpg/800px-IBM_Q_system.jpg" class="img-fluid" alt="IBM Quantum Computer">
+        </section>
     </div>
 
     <footer class="bg-dark text-white text-center py-3">
@@ -55,5 +66,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
